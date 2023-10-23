@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  background: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 730px;
+  height: 580px;
+  overflow: hidden;
+  /* font-weight: 800; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card .image-pc img {
+  width: 390px;
+  height: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.description .perfume {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+  font-size: 16px;
+}
+
+.description h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 40px;
+}
+
+.description>p {
+  color:#98989f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.card .pricing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.card .pricing .old-price {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card .pricing .cureent-price {
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+  margin-left: 15px;
+}
+
+button {
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button img {
+  margin-right: 10px;
+  height: 16px;
+}
+
+button:hover {
+  background-color:hsl(212, 21%, 14%);
+}
+
+@media (max-width:390px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .card .image-pc {
+    width: 100%;
+    height: 40%;
+  }
+
+  .card .image-pc img {
+    content: url("/product-preview-card-component-main/images/image-product-mobile.jpg");
+    margin: 0;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding-bottom: 8px;
+  }
+}

@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+main .logo img {
+  height: 30px;
+}
+
+main .logo {
+  margin-bottom: 20px;
+}
+
+main .text {
+  text-align: center;
+}
+
+main .text h1 {
+  font-size: 3em;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+@media (max-width: 767px) {
+  main .text h1 {
+    font-size: 2em;
+  }
+
+  main .logo {
+    margin-bottom: 15px;
+    margin: auto;
+  }
+
+  .icons i {
+    font-size: 30px;
+  }
+}
+
+main .text span {
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+
+main .text p {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 15px 0 20px 0;
+}
+
+main .label input {
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid #777;
+  margin-top: 30px;
+  padding-left: 25px;
+}
+
+main .label input:focus {
+  border: 2px solid hsl(354, 100%, 66%);
+}
+
+main .label input::placeholder {
+  color: #777;
+}
+
+main .label button {
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  width: 180px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 1em;
+  box-shadow: 1px 2px 5px 0px hsl(223, 87%, 63%);
+  margin-left: 10px;
+}
+
+@media (max-width:767px) {
+  main .label {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+  }
+
+  main .label input {
+    width: 350px;
+    margin-left: 10px;
+  }
+
+  main .label button {
+    width: 350px;
+    height: 60px;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
+img {
+  height: 400px;
+  margin-top: 40px;
+}
+
+@media (max-width:767px) {
+  img {
+    height: 300px;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.icons i {
+  margin: 15px;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 50%;
+  color: hsl(223, 87%, 63%);
+}

@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Big Shoulders Display', cursive;
+  /* font-family: 'Lexend Deca', sans-serif; */
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+main .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+}
+
+
+.box-one {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 3px;
+  width: 298px;
+  padding: 40px;
+}
+
+.box-two {
+  background-color: hsl(184, 100%, 22%);
+  border-radius: inherit;
+  width: 298px;
+  padding: 40px;
+}
+
+.box-three {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: inherit;
+  width: 298px;
+  padding: 40px;
+}
+
+.text {
+  max-width: 200px;
+}
+
+.text h2 {
+  font-size: 30px;
+  color: hsl(0, 0%, 95%);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.text p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 2;
+}
+
+button {
+  border: none;
+  background-color: #FFF;
+  color: #fff;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid hsl(0, 0%, 95%);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.box-one button {
+  color: hsl(31, 77%, 52%);
+}
+
+.box-two button {
+  color: hsl(184, 100%, 22%);
+}
+
+.box-three button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width:767px) {
+  main .boxes {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    height: 60%;
+    padding: 22px 1px 24px 0px;
+  }
+}
+
+footer
+{
+  text-align: center;
+}
+footer a
+{
+  font-size: 30px;
+  text-decoration: none;
+  padding: 5px;
+}
